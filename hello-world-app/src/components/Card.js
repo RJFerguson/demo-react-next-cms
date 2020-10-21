@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export const Card = ({ item }) => (
   <div className="w-400">
@@ -14,3 +15,12 @@ export const Card = ({ item }) => (
     </div>
   </div>
 );
+
+// Card.PropTypes = {
+//   item: {
+//     title: PropTypes.string,
+//     description: PropTypes.string,
+//     qty: PropTypes.number,
+//     price: PropTypes.number,
+//   },
+// };
