@@ -19,7 +19,7 @@ export default class App extends React.Component {
   async componentDidMount() {
     halfmoon.onDOMContentLoaded();
 
-    await fetch("http://localhost:1337/products")
+    await fetch("/products")
       .then((response) => response.json())
       .then((data) => this.setState({ data }));
   }
